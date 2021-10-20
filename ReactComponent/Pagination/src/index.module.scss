@@ -1,0 +1,55 @@
+.root{
+  width: 100%;
+  text-align: right;
+}
+
+@mixin basePageStyle{
+  display: inline-block;
+  width: 26px;
+  padding: 0 5px;
+  height: 24px;
+  margin: 0 2px;
+  border: 1px solid #e7ecf0;
+  text-align: center;
+  color: #2d64b3;
+  line-height: 24px;
+  background: #FFFFFF;
+  cursor: pointer;
+
+  &:hover{
+    text-decoration: underline;
+    color: #03a9f4;
+    font-weight: bold;
+  }
+}
+
+.firstPage{
+  @include basePageStyle;
+  width: 42px;
+}
+
+.lastPage{
+  @include basePageStyle;
+  width: 42px;
+}
+
+.prePage{
+  @include basePageStyle;
+  width: 52px;
+}
+
+.nextPage{
+  @include basePageStyle;
+  width: 52px;
+}
+
+.page{
+  @include basePageStyle;
+}
+
+.action{
+  color: #03a9f4;
+  background: #f7f7f9;
+  font-weight: bold;
+  text-decoration: underline;
+}
