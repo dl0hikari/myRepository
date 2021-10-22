@@ -7,7 +7,10 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
 
 
 module.exports = {
-    entry: path.join(__dirname, "examples/src/index.jsx"),
+    entry: path.join(__dirname, "src/index.jsx"),
+    output: {
+      libraryTarget: 'umd',
+    },
     module: {
         rules: [
             {
